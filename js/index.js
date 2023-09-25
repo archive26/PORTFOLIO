@@ -174,8 +174,10 @@ $(document).ready(function(){
 
 // 배너 이미지 클릭 시 해당 이미지 보이게 //
   $(".banner_full").click(function(){
+    let imgsrc2 = $(this).children().attr("src")
+    $(".full2").find("img").attr("src",imgsrc2)
     $(".full2").addClass("on")
-    })
+  })
 
   $(".full2").click(function(){
    $(this).removeClass("on")
